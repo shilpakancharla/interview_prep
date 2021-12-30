@@ -1,3 +1,5 @@
+# Topic Categories
+
 1. Sliding Window
 2. Two Pointers or Iterators
 3. Fast & Slow Pointers
