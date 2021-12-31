@@ -41,10 +41,3 @@ class LinkedList:
         new_node = Node(new_data)
         new_node.next = self.head
         self.head = new_node
- 
-    # Utility function to print the linked LinkedList
-    def printList(self):
-        temp = self.head
-        while(temp):
-            print temp.data,
-            temp = temp.next
