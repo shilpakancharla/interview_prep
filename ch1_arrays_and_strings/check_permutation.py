@@ -33,6 +33,22 @@ def check_permutation(string_input_1, string_input_2):
 
     return True
 
+def check_p(s1, s2):
+    if len(s1) != len(s2):
+        return False
+
+    count = dict()
+    for i in s1:
+        count[i] = count.get(i, 0) + 1
+    for i in s2:
+        if i in count:
+            count[i] -= 1
+            if count[i] == 0:
+                del count[i]
+        else:
+            return False
+    return len(count) == 0
+
 # Driver code
 string_1 = "wazup bro"
 string_2 = " orbpuwaz"
